@@ -26,6 +26,12 @@ function fitScreen() {
 fitScreen();
 window.addEventListener('resize', fitScreen);
 
+// 手机端导航默认居中：窄屏横向滚动时内容居中显示，末尾"三下乡专题"入口完整可见
+const mainNav = document.querySelector('.main-nav');
+if (mainNav && mainNav.scrollWidth > mainNav.clientWidth) {
+  mainNav.scrollLeft = (mainNav.scrollWidth - mainNav.clientWidth) / 2;
+}
+
 // 回到顶部按钮（所有页面自动注入）
 const backTop = document.createElement('button');
 backTop.type = 'button';

@@ -465,6 +465,7 @@ b.kw { font-weight: 700; }
   .grid-4, .grid-5 { grid-template-columns: repeat(2, 1fr); }
   .two-col { grid-template-columns: 1fr; gap: 16px; }
   .photo-grid { flex-direction: column; align-items: center; }
+  .photo-grid .photo { flex: 0 1 auto; } /* 纵向 flex 下 flex-basis:0 会被部分 WebKit 解析为高度 0，图片被裁没；改为内容高度 */
   .omnibox { width: 260px; }
 }
 @media (max-width: 760px) {

@@ -4,10 +4,10 @@ const path = require('path');
 const SRC = 'C:/Users/Administrator/Desktop/TIU/backup_png';
 const DST = 'C:/Users/Administrator/Desktop/TIU/images';
 // ★ 关键词图（图内文字是解谜线索）：q85 保文字清晰；背景图 q75
-const KEY = new Set(['11','12','13','14','15','16','17','19','21','22','23','24','25','26','28','30','32','35']);
+const KEY = new Set(['11','12','13','14','15','16','17','19','21','22','23','24','25','26','28','30','32','35','39','40']);
 (async () => {
   let total = 0, totalOld = 0;
-  for (let i = 1; i <= 38; i++) {
+  for (let i = 1; i <= 42; i++) {
     const n = String(i).padStart(2, '0');
     const src = path.join(SRC, n + '.png');
     if (!fs.existsSync(src)) { console.log('缺少原图', n); continue; }

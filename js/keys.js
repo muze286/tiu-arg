@@ -70,6 +70,14 @@ window.ENCRYPTED = {
   '1UkMiGPTzWltsWl9VjNR+w==': [{ title: '设备布点 · 位置核验', url: 'hf-locate.html', desc: '与 GPS 记录一致的坐标。' }],
   // 老井 → 布点地图
   'fa6UyxzC9d1HBWOBMkGKLQ==': [{ title: '青云村 · 设备布点地图', url: 'hf-map.html', desc: '村西老井——布点图上第三处手写标注。' }],
+  // 庆典 → 项目活动安排
+  'eYLIoQQY+PGpGfWDfGLeTw==': [{ title: '项目活动安排', url: 'hf-schedule.html', desc: '7 月活动安排表。' }],
+  // 日期 → 项目活动安排
+  'T/HnTkOjWGM5JRSUEXGFrQ==': [{ title: '项目活动安排', url: 'hf-schedule.html', desc: '07-28。油墨重描过，但打印的日期还是能看清。' }],
+  // 仓储 → 仓储物资出入记录
+  'h0+dMZA1TmSO6BklPvnkYQ==': [{ title: '仓储物资出入记录', url: 'hf-material.html', desc: '2026 年 7 月领用记录（节选）。' }],
+  // 清单 → 仓储物资出入记录
+  'jZpJW32Gle4XEZ1iwjoP2w==': [{ title: '仓储物资出入记录', url: 'hf-material.html', desc: '领用清单（节选）。' }],
 
   /* —— 第三幕关键词（25~28） —— */
   // 后台 → 后台访问日志
@@ -94,6 +102,10 @@ window.ENCRYPTED = {
   '3NQ/B+isrxl6SfMbAE3JwA==': [{ title: '键盘下的字条', url: 'note.html', desc: '打印出来。别删除。' }],
   // 真相 → 调查结果
   '7Jmh1AAxUZ4FjjCFD86uYA==': [{ title: '调查结果公布', url: 'verdict.html', desc: '真相水落石出。' }],
+  // 现场 → 现场勘验记录
+  'SYvQXrxonf3oxKOlms5KQg==': [{ title: '现场勘验记录（摘录）', url: 'site-record.html', desc: '07-28 村西仓库及老井周边。' }],
+  // 物证 → 现场勘验记录
+  'rvxWrFMP0e5bm7acDC/EVA==': [{ title: '现场勘验记录（摘录）', url: 'site-record.html', desc: '二次回填土层下起出的物证清单。' }],
   // 结局 → 结局
   'r0AgGW9jRuPcEf1W+kI77w==': [{ title: '结局', url: 'ending.html', desc: '36/36 —— 全部线索回收。' }]
 };
@@ -104,7 +116,7 @@ window.FORBIDDEN = [
     hidden: true,
     customDate: '2026/07/19 03:12',
     text: '如果你能看到这句话——去查 07 月 19 日之后的下乡日志。别用手机。T.',
-    clearedText: '第二次看到这里的人，应该已经知道真相了。日志查过了，仓库去过了，02:17 的屏幕也看过了。那就换一句：谢谢你，一条一条搜到底。T.',
+    clearedText: '第二次看到这里的人，应该已经知道真相了。日志查过了，仓库去过了，02:17 的屏幕也看过了。那就换一句：谢谢你，一条一条搜到底。失踪的档案，已经恢复了。T.',
     clearedDate: '2026/07/28 07:52'
   }
 ];

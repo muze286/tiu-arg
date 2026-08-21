@@ -71,7 +71,7 @@
       <div class="site-footer">
         <span>本网站为虚构游戏作品，与任何真实的人物、团体或事件无关</span>
         <span>Copyright © 2026 南方农业工程学院科联</span>
-        <strong>—/36</strong>
+        <strong>—/40</strong>
       </div>
     </footer>
   </div>
@@ -109,6 +109,7 @@
         try { cleared = localStorage.getItem('tiu-cleared') === '1'; } catch (e) {}
         var text = cleared && fb.clearedText ? fb.clearedText : fb.text;
         var date = cleared && fb.clearedDate ? fb.clearedDate : fb.customDate;
+        var extra = cleared ? '<p class="fb-extra"><a class="button" href="after.html">查看恢复的失踪档案 →</a></p>' : '';
         box.innerHTML =
           '<div class="fb-box">' +
           '<h2>此文件已被禁止访问</h2>' +
@@ -118,6 +119,7 @@
             ? '<span class="hidden-text">' + text + '</span>'
             : '<span class="visible-text">' + text + '</span>') + '</div>' +
           '<p class="fb-date">最后访问：' + (date || '未知') + '</p>' +
+          extra +
           '</div>';
         return;
       }

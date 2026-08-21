@@ -7,7 +7,7 @@ const DST = 'C:/Users/Administrator/Desktop/TIU/images';
 const KEY = new Set(['11','12','13','14','15','16','17','19','21','22','23','24','25','26','28','30','32','35']);
 (async () => {
   let total = 0, totalOld = 0;
-  for (let i = 1; i <= 36; i++) {
+  for (let i = 1; i <= 38; i++) {
     const n = String(i).padStart(2, '0');
     const src = path.join(SRC, n + '.png');
     if (!fs.existsSync(src)) { console.log('缺少原图', n); continue; }
@@ -18,7 +18,7 @@ const KEY = new Set(['11','12','13','14','15','16','17','19','21','22','23','24'
       img = img.resize({ width: 1600, height: 1600, fit: 'inside', withoutEnlargement: true });
     }
     const out = path.join(DST, n + '.webp');
-    const oldSize = fs.statSync(out).size;
+    const oldSize = fs.existsSync(out) ? fs.statSync(out).size : 0;
     await img.webp({ quality: key ? 85 : 75 }).toFile(out);
     const newSize = fs.statSync(out).size;
     total += newSize; totalOld += oldSize;

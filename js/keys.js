@@ -68,6 +68,8 @@ window.ENCRYPTED = {
   'oQ+nY9IBzZN4DlFfGsmijQ==': [{ title: '设备布点 · 位置核验', url: 'hf-locate.html', desc: '坐标比对：30.27°N, 112.45°E。' }],
   // 坐标 → 位置核验
   '1UkMiGPTzWltsWl9VjNR+w==': [{ title: '设备布点 · 位置核验', url: 'hf-locate.html', desc: '与 GPS 记录一致的坐标。' }],
+  // 老井 → 布点地图
+  'fa6UyxzC9d1HBWOBMkGKLQ==': [{ title: '青云村 · 设备布点地图', url: 'hf-map.html', desc: '村西老井——布点图上第三处手写标注。' }],
 
   /* —— 第三幕关键词（25~28） —— */
   // 后台 → 后台访问日志
